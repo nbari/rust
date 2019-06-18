@@ -1,0 +1,11 @@
+[package]
+name = "git"
+version = "0.1.0"
+authors = ["nbari <nbari@tequila.io>"]
+edition = "2018"
+
+[dependencies]
+docopt = "1.1.0"
+git2 = "0.8"
+serde = "1.0.92"
+serde_derive = "1.0.92"
