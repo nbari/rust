@@ -92,7 +92,7 @@ async fn start_echo(
     }
 
     // The loop has been broken, kill the echo actor
-    // system.stop_actor(actor_ref.path()).await;
+    system.stop_actor(actor_ref.path()).await;
 }
 
 #[derive(Clone)]
