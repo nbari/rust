@@ -24,7 +24,7 @@ async fn main() {
             sse_counter(counter)
         });
         // reply using server-sent events
-        warp::sse::reply(event_stream)
+        warp::sse::reply(warp::sse::keep_alive().stream(event_stream))
     });
 
     warp::serve(routes).run(([127, 0, 0, 1], 3030)).await;
